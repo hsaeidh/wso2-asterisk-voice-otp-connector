@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.irisadc.identity</groupId>
+  <artifactId>wso2-asterisk-voice-otp-connector-parent</artifactId>
+  <version>0.1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>WSO2 Asterisk Voice OTP Connector</name>
+  <description>Voice OTP integrations for WSO2 IS 7.3.0 using Asterisk ARI and SayDigits.</description>
+  <url>https://github.com/hsaeidh/wso2-asterisk-voice-otp-connector</url>
+  <modules>
+    <module>components</module>
+    <module>features</module>
+    <module>integration-tests</module>
+  </modules>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.release>21</maven.compiler.release>
+    <java.version>21</java.version>
+    <wso2.is.version>7.3.0</wso2.is.version>
+    <carbon.identity.framework.version>7.10.156</carbon.identity.framework.version>
+    <identity.governance.version>1.15.9</identity.governance.version>
+    <identity.auth.otp.commons.version>1.1.1</identity.auth.otp.commons.version>
+    <identity.local.auth.emailotp.version>1.1.4</identity.local.auth.emailotp.version>
+    <identity.local.auth.smsotp.version>1.1.6</identity.local.auth.smsotp.version>
+    <maven.compiler.plugin.version>3.13.0</maven.compiler.plugin.version>
+    <maven.bundle.plugin.version>5.1.9</maven.bundle.plugin.version>
+    <maven.surefire.plugin.version>3.5.2</maven.surefire.plugin.version>
+  </properties>
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>${maven.compiler.plugin.version}</version>
+          <configuration><release>${maven.compiler.release}</release></configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.felix</groupId>
+          <artifactId>maven-bundle-plugin</artifactId>
+          <version>${maven.bundle.plugin.version}</version>
+          <extensions>true</extensions>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>${maven.surefire.plugin.version}</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+  <scm>
+    <connection>scm:git:https://github.com/hsaeidh/wso2-asterisk-voice-otp-connector.git</connection>
+    <developerConnection>scm:git:git@github.com:hsaeidh/wso2-asterisk-voice-otp-connector.git</developerConnection>
+    <url>https://github.com/hsaeidh/wso2-asterisk-voice-otp-connector</url>
+  </scm>
+</project>
