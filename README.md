@@ -11,3 +11,5 @@ WSO2 Identity Server 7.3.0 integration for dual-channel OTP delivery using SMS a
 See [Architecture](docs/ARCHITECTURE.md) and [Dual-channel fallback](docs/DUAL_CHANNEL_FALLBACK.md).
 
 The project is under development. Do not deploy until the target-version integration and security tests pass.
+
+See also [WSO2 IS 7.3.0 integration findings](docs/WSO2_73_INTEGRATION_FINDINGS.md) for the verified boundaries and remaining adapter prerequisites.
